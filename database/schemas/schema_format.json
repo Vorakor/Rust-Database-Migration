@@ -1,0 +1,27 @@
+{
+    "databaseEngine": "mysql/postgre/mssql/sqlserver",
+    "databaseUser": "root/anotherUserHere",
+    "databasePass": "passwordHere",
+    "databaseHost": "localhost/127.0.0.1/anotherAddressHere",
+    "databasePort": "3306/3307/anotherPortHere",
+    "databaseName": "databaseNameHere",
+    "schema": {
+        "schemaName": "blankIfNoSchema"
+    },
+    "tables": [
+        {
+            "tableName": "nameHere",
+            "storageEngine": "innodb",
+            "fields": [
+                {
+                    "fieldName": "fieldNameHere",
+                    "fieldDataType": "int/varchar(255)/date/tinyint/text/timestamp",
+                    "fieldNotNull": "True/False",
+                    "fieldDefaultValue": "defaultValue",
+                    "fieldAutoIncrement": "True/False",
+                    "fieldConstraints": "On Update CURRENT_TIMESTAMP"
+                }
+            ]
+        }
+    ]
+}
