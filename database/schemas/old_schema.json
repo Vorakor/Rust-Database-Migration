@@ -1,25 +1,38 @@
 {
-    "databaseEngine": "mysql/postgre/mssql/sqlserver",
-    "databaseUser": "root/anotherUserHere",
-    "databasePass": "passwordHere",
-    "databaseHost": "localhost/127.0.0.1/anotherAddressHere",
-    "databasePort": "3306/3307/anotherPortHere",
-    "databaseName": "databaseNameHere",
-    "schema": {
-        "schemaName": "blankIfNoSchema"
-    },
+    "databaseEngine": "mysql",
+    "databaseUser": "rustacean",
+    "databasePass": "ru$T@c3an!P@s$w0rd",
+    "databaseHost": "localhost",
+    "databasePort": "3306",
+    "databaseName": "rust_migrations",
     "tables": [
         {
-            "tableName": "nameHere",
+            "tableName": "articles",
             "storageEngine": "innodb",
             "fields": [
                 {
-                    "fieldName": "fieldNameHere",
-                    "fieldDataType": "int/varchar(255)/date/tinyint/text/timestamp",
-                    "fieldNotNull": "True/False",
-                    "fieldDefaultValue": "defaultValue",
-                    "fieldAutoIncrement": "True/False",
-                    "fieldConstraints": "On Update CURRENT_TIMESTAMP"
+                    "fieldName": "article_id",
+                    "fieldDataType": "int",
+                    "fieldNotNull": "True",
+                    "fieldDefaultValue": "",
+                    "fieldAutoIncrement": "True",
+                    "fieldConstraints": ""
+                },
+                {
+                    "fieldName": "article_title",
+                    "fieldDataType": "varchar(255)",
+                    "fieldNotNull": "True",
+                    "fieldDefaultValue": "",
+                    "fieldAutoIncrement": "False",
+                    "fieldConstraints": ""
+                },
+                {
+                    "fieldName": "article_content",
+                    "fieldDataType": "text",
+                    "fieldNotNull": "False",
+                    "fieldDefaultValue": "",
+                    "fieldAutoIncrement": "False",
+                    "fieldConstraints": ""
                 }
             ]
         }
