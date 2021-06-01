@@ -32,4 +32,5 @@ fn create_schema(schema: &str) {
     let json_file = fs::File::open(json_schema.display().to_string()).unwrap();
     let json: serde_json::Value = serde_json::from_reader(json_file).unwrap();
     println!("{}", json.get("databaseEngine").unwrap());
+    println!("{}", json.get("databaseName").unwrap());
 }
